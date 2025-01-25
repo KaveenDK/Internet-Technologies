@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises 4</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="width: 500px; text-align: left">
+      <tr style="height: 40px">
+        <td colspan="4">
+          <p><b>Personal Information</b></p>
+        </td>
+      </tr>
+      <tr style="height: 40px">
+        <td>
+          <p>
+            <b>Name: </b>
+          </p>
+        </td>
+        <td colspan="3">
+          <input type="text" placeholder="Enter name here" maxlength="10" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td>
+          <p>
+            <b>Age: </b>
+          </p>
+        </td>
+        <td colspan="3">
+          <input type="number" value="18" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td rowspan="3">
+          <p>
+            <b>Address: </b>
+          </p>
+        </td>
+        <td>
+          <p><b>Street: </b></p>
+        </td>
+        <td colspan="2">
+          <input type="text" placeholder="street" maxlength="10" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td>
+          <p><b>City: </b></p>
+        </td>
+        <td colspan="2">
+          <input type="text" placeholder="city" maxlength="10" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td>
+          <p><b>Zip Code: </b></p>
+        </td>
+        <td colspan="2">
+          <input type="text" placeholder="Zip Code" maxlength="10" />
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4">
+          <p><b>Additional Information</b></p>
+        </td>
+      </tr>
+      <tr style="height: 50px">
+        <td colspan="4">
+          <textarea name="msg" id="msg" rows="4" cols="80"></textarea>
+        </td>
+      </tr>
+      <tr style="height: 40px">
+        <td colspan="4">
+          <input type="submit" value="Submit" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
