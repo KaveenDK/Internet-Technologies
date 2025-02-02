@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson CSS Selectors</title>
+    <style>
+      /* h2 {
+        color: red;
+      }
+
+      .heading {
+        color: green;
+      }
+
+      #title {
+        color: purple;
+        background-color: black;
+      }
+
+      a[target="_blank"] {
+        color: palevioletred;
+      }
+
+      div p {
+        color: darkblue;
+      } */
+
+      /* div > p {
+        color: yellow;
+      } */
+
+      /* h2 + p {
+        color: chocolate;
+      } */
+
+      /* h1 ~ p {
+        color: darkred;
+      } */
+
+      /* Pseudo class selector */
+
+      /* li:first-child {
+        color: red;
+      }
+
+      li:last-child {
+        color: blue;
+      }
+
+      li:nth-child(3) {
+        color: green;
+      } */
+
+      /* li:nth-child(odd) {
+        background-color: aqua;
+      }
+
+      li:nth-child(even) {
+        background-color: yellow;
+      } */
+
+      /* ul:hover {
+        background-color: lightcoral;
+      }
+
+      p:hover {
+        background-color: blueviolet;
+      } */
+
+      /* p::first-letter {
+        font-size: 20px;
+        color: red;
+      }
+
+      p::first-line {
+        color: blue;
+      } */
+
+      /* p::before {
+        content: "Hello";
+        color: red;
+      }
+
+      p::after {
+        content: "end";
+        color: green;
+      } */
+
+      /* 11.Grouping Selector */
+
+      h1,
+      h2,
+      h3 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+
+    <strong>====1. Element Selector ======</strong>
+    <h2>Hello World!</h2>
+    <h2>Hey</h2>
+
+    <strong>===2. Class Selector ====</strong>
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+    <h4 class="heading">Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p class="heading">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere
+      nostrum nemo tempore labore sed.
+    </p>
+
+    <strong>===3. Id selector ====</strong>
+    <h2 id="title">My Title</h2>
+    <!-- id is a unic don't repeat this -->
+    <h3 id="title">Explain this javascipt module</h3>
+
+    <strong>====4. Attribute Selector ====</strong> <br />
+    <a href="https://www.google.com" target="_blank">Click here</a> <br /><br />
+
+    <strong>=====5. Descendant Selector (Space) ======</strong>
+    <p>Hey there</p>
+    <div>
+      <p>One</p>
+      <p>Two</p>
+      <p>Three</p>
+      <span><p>Four</p></span>
+    </div>
+
+    <strong>====6. Child Selector (>) =====</strong>
+    <div>
+      <p>This paragraph is a ditect child of div</p>
+      <section>
+        <p>This paragraph is inside a section, not a direct child of div</p>
+      </section>
+    </div>
+    <br />
+
+    <strong>====7. Adjacent Sibling Selector (+) ======</strong>
+    <h2>Adjacent</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    <strong>===8. General Subling Selector(~) ====</strong>
+    <h1>Main Heading</h1>
+    <p>Lorem ipsum dolor sit.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <div>
+      <p>Hello World</p>
+    </div>
+
+    <strong>====9. Pseudo class selector ======</strong>
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML</li>
+      <li>C#</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam
+      dolore? Vero unde earum dolores maxime harum cupiditate consectetur eum.
+    </p>
+
+    <strong>====10.Pseudo Element selector ======</strong>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+      explicabo reprehenderit voluptatum. Illum rem nulla eveniet fuga impedit
+      vero molestiae, ex accusantium dignissimos ratione corrupti excepturi
+      doloribus. Provident sed, adipisci quo odit ratione ea? Perferendis
+      eveniet animi commodi possimus doloremque maxime, incidunt tenetur sit,
+      sapiente in nam placeat rerum at!
+    </p>
+
+    <strong>=====11. Grouping Selector() ======</strong>
+    <h1>Heading1</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+  </body>
+</html>
