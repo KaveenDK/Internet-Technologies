@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises 08</title>
+    <link rel="icon" href="/assest/Images/KaveeN.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-color: bisque;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        position: fixed; /*meka damme digaathata heder eka move wena eka nawaththanna*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8vh;
+      }
+      #header_logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 1px solid #333;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+      #header_content {
+        display: flex;
+        align-items: center;
+      }
+      nav > ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav > ul > li {
+        margin: 0 20px;
+      }
+      nav > ul > li > a {
+        color: aliceblue;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.1rem;
+      }
+      #hero_section {
+        display: flex;
+        margin-top: 11vh;
+      }
+      #hero_content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 24px;
+      }
+      #moreinfo_btn {
+        background-color: #333;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 5px;
+      }
+      #hero_image {
+        width: 50%;
+        object-fit: cover;
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+      }
+      #social_media {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 12px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="header_content">
+        <img
+          id="header_logo"
+          src="/assest/Images/KaveeN.jpg"
+          alt="Profile Picture"
+          title="Dimantha KaveeN"
+        />
+        <h3>Dimantha KaveeN</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero_section">
+        <div id="hero_content">
+          <h1>Welcome to My Website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            eligendi distinctio tempora nostrum expedita magnam. Ea veniam aut
+            quisquam non voluptate iusto vel unde officia aliquam, dolore,
+            nesciunt est debitis, magnam at explicabo cumque provident incidunt
+            dolor error excepturi? Quia, necessitatibus perspiciatis architecto
+            magnam soluta quo omnis consectetur esse excepturi eos iure vero non
+            dicta, a tempora. Esse impedit atque, assumenda provident laborum
+            alias, doloremque nam vitae dolor amet architecto quibusdam! Cum
+            itaque rem iure quis beatae, ipsum totam obcaecati adipisci. Id,
+            modi. Amet saepe quam reiciendis aspernatur, maiores harum corporis
+            consequuntur, tenetur modi voluptates suscipit! Quibusdam nemo porro
+            a?
+          </p>
+          <button id="moreinfo_btn">More Info</button>
+          <div id="social_media">
+            <a
+              href="https://www.facebook.com/profile.php?id=61550196402141"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook social-icon"></i>
+            </a>
+            <a
+              href="https://x.com/kaveen_69?t=32vAjHynsEWVjVswwT3YLw&s=35"
+              target="_blank"
+            >
+              <i class="fa-brands fa-x-twitter social-icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dimantha-kaveen-a843092b5/?trk=PROFILE_DROP_DOWN"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin social-icon"></i>
+            </a>
+            <a href="https://github.com/KaveenDK" target="_blank">
+              <i class="fa-brands fa-github social-icon"></i>
+            </a>
+          </div>
+        </div>
+        <img
+          id="hero_image"
+          src="/assest/Images/KaveeN.jpg"
+          alt="KaveeN"
+          title="Dimantha KaveeN"
+        />
+      </section>
+    </main>
+  </body>
+</html>
