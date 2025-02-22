@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise 12</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .circle-container .circle {
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        border-radius: 100%;
+        margin: 10px;
+      }
+
+      @keyframes up-to-down {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-60px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .circle-1 {
+        animation: up-to-down 1s ease-in-out infinite 0s;
+      }
+
+      .circle-2 {
+        animation: up-to-down 1s ease-in-out infinite 0.25s;
+      }
+
+      .circle-3 {
+        animation: up-to-down 1s ease-in-out infinite 0.5s;
+      }
+
+      .circle-4 {
+        animation: up-to-down 1s ease-in-out infinite 0.75s;
+      }
+
+      .circle-5 {
+        animation: up-to-down 1s ease-in-out infinite 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.circle-container>circle.circle-$*5 -->
+    <div class="circle-container">
+      <circle class="circle circle-1"></circle>
+      <circle class="circle circle-2"></circle>
+      <circle class="circle circle-3"></circle>
+      <circle class="circle circle-4"></circle>
+      <circle class="circle circle-5"></circle>
+    </div>
+  </body>
+</html>
