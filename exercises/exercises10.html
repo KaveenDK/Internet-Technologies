@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>excersice-9</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: wheat;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .card-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 10vw;
+        height: 10vw;
+        background-color: white;
+        margin: 5vw;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.2);
+        transition: transform 1s ease-in-out, color 1s ease-in-out,
+          font-size 1s ease-in-out;
+      }
+      .card div {
+        font-size: large;
+        position: absolute;
+        top: 10%;
+        font-size: 50px;
+      }
+      .card p {
+        position: absolute;
+        bottom: 5%;
+        opacity: 0;
+      }
+      .card-1:hover {
+        transform: scale(1.2);
+      }
+      .card:hover {
+        cursor: pointer;
+        color: white;
+        transform: scale(1.2);
+        color: black;
+        font-size: 1.5rem;
+      }
+      .card:hover p {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card card-1">
+        <div>😁</div>
+        <p>Happy</p>
+      </div>
+      <div class="card card-2">
+        <div>😭</div>
+        <p>Crying</p>
+      </div>
+      <div class="card card-3">
+        <div>😍</div>
+        <p>Love</p>
+      </div>
+      <div class="card card-4">
+        <div>🤭</div>
+        <p>Shy</p>
+      </div>
+    </div>
+    <!-- div.contariner>div.class-$*4 -->
+  </body>
+</html>
