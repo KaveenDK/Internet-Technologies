@@ -3,243 +3,272 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Excercise 13</title>
+    <title>Exercise - 12</title>
     <style>
       body {
-        margin: 0;
+        background-color: azure;
       }
-      body > h1 {
+      #title {
         text-align: center;
-        margin: 12px;
       }
-      .card-container {
+      .container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         gap: 12px;
-        margin: 12px;
       }
-      .card {
+      .product-card {
         background-color: wheat;
         padding: 16px;
-        border: 1px solid #333;
         border-radius: 12px;
-        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
       }
-      .img {
+      .btn-buy-now {
+        padding: 8px 16px;
+        background-color: blue;
+        color: white;
+        border-radius: 12px;
         width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 12px;
+        margin-top: 8px;
       }
-      /* .tittle {
+      .btn-add-to-cart {
+        padding: 8px 16px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .product-details {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      } */
-      .price {
-        font-size: 1rem;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
       }
-      .description {
-        font-size: 1rem;
+      .product-image {
+        width: 100%;
+        border-radius: 12px;
+      }
+      .product-description {
         height: 100px;
         overflow-y: scroll;
       }
-      .button-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
-      .button1 {
-        background-color: blue;
-        color: white;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 10px;
-        margin-right: 8px;
-      }
-      .button2 {
-        background-color: #333;
-        color: white;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 10px;
-      }
+
       @media screen and (max-width: 575px) {
-        .card-container {
+        .container {
           grid-template-columns: repeat(1, 1fr);
         }
       }
       @media screen and (min-width: 576px) and (max-width: 767px) {
-        .card-container {
+        .container {
           grid-template-columns: repeat(2, 1fr);
         }
       }
-      @media screen and (min-width: 768) and (max-width: 991px) {
-        .card-container {
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
           grid-template-columns: repeat(3, 1fr);
         }
       }
-      @media screen and (min-width: 992) and (max-width: 1199px) {
-        .card-container {
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
           grid-template-columns: repeat(4, 1fr);
         }
       }
       @media screen and (min-width: 1200px) and (max-width: 1399px) {
-        .card-container {
+        .container {
           grid-template-columns: repeat(5, 1fr);
         }
       }
     </style>
   </head>
   <body>
-    <h1>Product Gallery</h1>
-    <div class="card-container">
-      <div class="card card01">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+    <h1 id="title">Products Gallery</h1>
+    <div class="container">
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card02">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card03">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card04">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card05">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card06">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card07">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
-      <div class="card card08">
-        <img class="img" src="/assest/Images/HomeScreen.jpg" alt="wallpaper" />
-        <div class="tittle">
-          <h1>Laptop</h1>
-          <p class="price">$399.99</p>
-          <div>
-            <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum
-              velit, omnis magnam minus sapiente! Quae dolorem illo, ipsum
-              cupiditate debitis doloremque impedit maiores quod?
-            </p>
-          </div>
-          <div class="button-container">
-            <button class="button1">Buy Now</button>
-            <button class="button2">Add TO Cart</button>
-          </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/assest/Images/HomeScreen.jpg"
+          alt="laptop"
+        />
+        <div class="product-details">
+          <h3>Laptop</h3>
+          <p>$399.99</p>
         </div>
+        <div class="product-description">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
+            eius recusandae odit laborum magni veniam obcaecati iure unde
+            expedita molestiae incidunt optio adipisci, amet odio aliquid!
+            Repudiandae blanditiis illo, deserunt aliquid consectetur illum
+            delectus voluptas nostrum voluptatem. Cumque ex quos dolorem. Dicta
+            cupiditate porro illum unde quo quisquam vitae voluptates!
+          </p>
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
       </div>
     </div>
   </body>
