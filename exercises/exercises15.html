@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercises 15</title>
+  </head>
+  <style>
+    h1 {
+      color: blue;
+    }
+    input {
+      width: 20%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      padding: 10px;
+      background-color: goldenrod;
+      color: white;
+      border: none;
+    }
+    p {
+      font-size: 20px;
+    }
+    #Result {
+      color: red;
+    }
+  </style>
+  <body>
+    <h1>Simple Calculator</h1>
+
+    <input type="text" id="input-field" />
+    <button onclick="calculate()">Calculate</button>
+    <p>Result: <span id="Result"></span></p>
+
+    <script>
+      function calculate() {
+        let expression = document.getElementById("input-field").value;
+        console.log(expression);
+        try {
+          let Result = eval(expression); // evaluates the mathematical expression
+          document.getElementById("Result").innerText = Result;
+        } catch (error) {
+          document.getElementById("Result").innerText = "Invalid Expression";
+        }
+      }
+    </script>
+  </body>
+</html>
