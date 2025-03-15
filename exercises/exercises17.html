@@ -32,10 +32,14 @@
       boxes.forEach((box) => {
         box.style.backgroundColor = "white";
       });
+
       boxes[curruntIndex].style.backgroundColor = "red";
+
+      let previouseIndex = (curruntIndex - 1 + boxes.length) % boxes.length;
+      boxes[previouseIndex].style.backgroundColor = "blue";
+
       curruntIndex = (curruntIndex + 1) % boxes.length;
     }
-
     setInterval(changeColor, 1000);
   </script>
 </html>
