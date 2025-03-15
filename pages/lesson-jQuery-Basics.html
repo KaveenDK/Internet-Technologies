@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">jQuery Basics</h1>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci itaque,
+      minus quibusdam ipsum minima animi quam asperiores ex in est, non impedit
+      temporibus exercitationem debitis. Quisquam, quod. Quisquam, quod.
+    </p>
+    <p class="paragraph2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas amet
+      praesentium perferendis, temporibus ad. Eos suscipit quas reiciendis ipsa
+      natus cum, maxime, illum ducimus beatae inventore ea unde eveniet?
+    </p>
+    <button class="button">Click Me</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jQuery is ready to use");
+        $("#heading").css("color", "red");
+        $(".paragraph").css("background-color", "blue");
+        $(".button").css("background-color", "green").css("color", "white");
+
+        $(".button").click(function () {
+          //   alert("button clicked");
+          //   $("p").hide();
+          //   $("p").toggle();
+          //   $("p").fadeOut();
+          $("p").fadeToggle();
+        });
+
+        $(".paragraph2").mousemove(function () {
+          $(".paragraph2").css("background-color", "green");
+        });
+        $(".paragraph2").mouseout(function () {
+          $(".paragraph2").css("background-color", "yellow");
+        });
+      });
+    </script>
+  </body>
+</html>
